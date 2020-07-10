@@ -15,6 +15,17 @@ body {
 
 header {
   height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+header h1 {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  color: #333;
+  font-weight: 300;
+  font-size: 64px;
 }
 
 header #background-image {
@@ -192,7 +203,7 @@ header #background-image {
 }
 
 #steel-frame .ventajas-card .item {
-  width: 70%;
+  width: 75%;
   -ms-flex-item-align: center;
       align-self: center;
   text-align: center;
@@ -210,9 +221,13 @@ header #background-image {
   color: #00f800;
 }
 
+#steel-frame .ventajas-card .item span {
+  font-weight: 300;
+}
+
 #steel-frame .ventajas-card .item p {
   margin-left: 15px;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 18px;
   line-height: 23px;
 }
