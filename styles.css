@@ -3,7 +3,14 @@
 }
 
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: "Lato", sans-serif;
+  text-rendering: optimizeLegibility;
+  background: #ece9e6;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ece9e6));
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header {
@@ -19,7 +26,8 @@ header #background-image {
 }
 
 #navbar {
-  position: relative;
+  z-index: 1;
+  position: fixed;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -42,8 +50,8 @@ header #background-image {
   content: "";
   position: absolute;
   width: 100%;
-  top: 55px;
-  border-bottom: 6px solid #aaaaaa;
+  top: 44px;
+  border-bottom: 5px solid #009bc5;
   -webkit-animation: borderr 0.4s linear;
           animation: borderr 0.4s linear;
 }
@@ -75,44 +83,54 @@ header #background-image {
 #navbar .nav-link {
   margin: 0 10px;
   color: #000;
-  letter-spacing: 1px;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 19px;
 }
 
 #navbar .nav-link:hover {
-  font-weight: 300;
+  background-color: rgba(255, 255, 255, 0) !important;
+  font-weight: 400;
 }
 
 #servicios {
   width: 100%;
   text-align: center;
-  margin-top: 50px;
   position: relative;
-  margin-bottom: 300px;
 }
 
 #servicios .servicio {
   padding: 30px 0;
 }
 
-#servicios .servicio h5 {
-  margin: 15px 0;
+#servicios h2 {
+  padding: 10px 0;
   letter-spacing: 1px;
+  font-size: 32px;
+  font-weight: 300;
 }
 
-#servicios .servicio p {
+#servicios h5 {
+  margin: 15px 0;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+#servicios p {
   width: 50%;
   margin: auto;
   font-weight: 300;
   line-height: 25px;
-  letter-spacing: 1px;
   font-size: 17px;
 }
 
-#servicios .middle {
-  padding: 50px 0;
-  background: #ccc;
+#servicios > div:nth-child(even) {
+  background: #00b4db;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#0083b0), to(#00b4db));
+  background: linear-gradient(to right, #0083b0, #00b4db);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
 }
 
 #servicios img {
@@ -121,5 +139,81 @@ header #background-image {
 
 #servicios i {
   font-size: 45px;
+}
+
+#steel-frame .parallax-container {
+  margin: 130px 0;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#steel-frame .parallax-container h2 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 400;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: auto;
+}
+
+#steel-frame .parallax-container img {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+}
+
+#steel-frame .ventajas-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 800px;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 300px;
+  border-radius: 6%;
+  padding: 30px;
+  color: #fff;
+  background: #009bc5;
+}
+
+#steel-frame .ventajas-card h3 {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 200;
+}
+
+#steel-frame .ventajas-card .item {
+  width: 70%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#steel-frame .ventajas-card .item i {
+  font-size: 20px;
+  color: #00f800;
+}
+
+#steel-frame .ventajas-card .item p {
+  margin-left: 15px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
 }
 /*# sourceMappingURL=styles.css.map */

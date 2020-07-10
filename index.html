@@ -5,10 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khalifa</title>
+
+    <!-- FONT AWESOME KIT -->
     <script src="https://kit.fontawesome.com/03e7517ade.js" crossorigin="anonymous"></script>
+
+    <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./reset.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- MATERIALIZE -->
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- BOOTSTRAP -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -20,13 +34,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
+
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <header id="container">
-        <img src="./assets/imgs/khalifa-w3.jpeg" alt="" id="background-image">
+        <img src="./assets/imgs/1899388.jpg" alt="" id="background-image">
         <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
             <a class="navbar-brand" href="#"><img src="./assets/icons/kh-logo-2.png" id="khalifa-logo" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -53,8 +70,9 @@
     </header>
 
     <section id="servicios">
-        <h2>Nuestros Servicios</h2>
-
+        <div class="servicio" data-aos="fade-in">
+            <h2>Nuestros Servicios</h2>
+        </div>
         <div class="servicio" data-aos="fade-right">
             <i class="fas fa-home"></i>
             <h5>Obras de Arquitectura</h5>
@@ -65,7 +83,7 @@
                 seco mediante el sistema constructivo Steel Frame.
             </p>
         </div>
-        <div class="servicio middle" data-aos="fade-left">
+        <div class="servicio" data-aos="fade-left">
             <img src="./assets/icons/grua.png" alt="">
             <h5>Obras Industriales</h5>
             <p>
@@ -86,11 +104,65 @@
         </div>
     </section>
 
+
+    <section id="steel-frame">
+
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="./assets/imgs/khalifa-w1.jpeg">
+            </div>
+            <h2 data-aos="fade-in">Construimos con Steel Frame para la mejor calidad!</h2>
+        </div>
+
+
+
+            <div class="ventajas-card">
+                <h3>Beneficios de la construccion con Steelframe</h3>
+                <div class="item">
+                    <i class="fas fa-check"></i>
+                    <p>Flexibilidad arquitectónica, se adapta a cualquier tipo de proyecto</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-check"></i>
+                    <p>Durabilidad, tanto las placas como los materiales se mantienen inalterables durante décadas</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-check"></i>
+                    <p>Excelente aislación térmica y acústica, superando a la mampostería un 60% en materia de sonido y
+                        un 115% a nivel térmico.</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-check"></i>
+                    <p>Velocidad, Las viviendas en steel framing se construyen en un 70% menos de tiempo que una obra
+                        “húmeda”.</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-check"></i>
+                    <p>Optimización de materiales calculando previamente todo lo necesario, reduciendo desperdicios y costos</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-check"></i>
+                    <p>Flexibilidad arquitectónica, se adapta a cualquier tipo de proyecto</p>
+                </div>
+            </div>
+
+    </section>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
             offset: 250,
             duration: 800
+        });
+    </script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems);
         });
     </script>
 

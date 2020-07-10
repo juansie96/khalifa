@@ -7,7 +7,19 @@
 }
 
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: "Lato", sans-serif;
+  text-rendering: optimizeLegibility;
+  background: #ece9e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #ece9e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #ece9e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 // Sections
@@ -25,7 +37,8 @@ header {
 } // header
 
 #navbar {
-  position: relative;
+  z-index: 1;
+  position: fixed;
   background-color: rgba($color: #fff, $alpha: 0.7);
   img {
     width: 40px;
@@ -43,8 +56,8 @@ header {
       content: "";
       position: absolute;
       width: 100%;
-      top: 55px;
-      border-bottom: 6px solid #aaaaaa;
+      top: 44px;
+      border-bottom: 5px solid #009bc5;;
       animation: borderr 0.4s linear;
     }
 
@@ -64,45 +77,60 @@ header {
   .nav-link {
     margin: 0 10px;
     color: #000;
-    letter-spacing: 1px;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 19px;
 
     &:hover {
-      font-weight: 300;
+      background-color: rgba(255, 255, 255, 0) !important;
+      font-weight: 400;
     }
   }
 } // navbar
 
-
 #servicios {
   width: 100%;
   text-align: center;
-  margin-top: 50px;
   position: relative;
-  margin-bottom: 300px;
 
   .servicio {
     padding: 30px 0;
-
-    h5 {
-      margin: 15px 0;
-      letter-spacing: 1px;
-    }
-
-    p {
-      width: 50%;
-      margin: auto;
-      font-weight: 300;
-      line-height: 25px;
-      letter-spacing: 1px;
-      font-size: 17px;
-    }
   }
 
-  .middle {
-    padding: 50px 0;
-    background: #ccc;
+  h2 {
+    padding: 10px 0;
+    letter-spacing: 1px;
+    font-size: 32px;
+    font-weight: 300;
+  }
+
+  h5 {
+    margin: 15px 0;
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  p {
+    width: 50%;
+    margin: auto;
+    font-weight: 300;
+    line-height: 25px;
+    font-size: 17px;
+  }
+
+  & > div:nth-child(even) {
+    background: #00b4db; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #0083b0,
+      #00b4db
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #0083b0,
+      #00b4db
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #fff;
   }
 
   img {
@@ -112,4 +140,65 @@ header {
   i {
     font-size: 45px;
   }
-}
+} // servicios
+
+#steel-frame {
+  .parallax-container {
+    margin: 130px 0;
+    height: 250px;
+    display: flex;
+
+    h2 {
+      color: #fff;
+      font-size: 50px;
+      font-weight: 400;
+      align-self: center;
+      margin: auto;
+    }
+
+    img {
+      filter: brightness(60%);
+    }
+  } // parallax
+
+  .ventajas-card {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 300px;
+    border-radius: 6%;
+    padding: 30px;
+    color: #fff;
+    background: #009bc5;
+
+    h3 {
+      margin: 20px 0;
+      text-align: center;
+      font-size: 34px;
+      font-weight: 200;
+    }
+
+    .item {
+      width: 70%;
+      align-self: center;
+      text-align: center;
+      display: flex;
+      margin: 30px 0;
+      justify-content: center;
+
+      i {
+        font-size: 20px;
+        color: rgb(0, 248, 0);
+      }
+
+      p {
+        margin-left: 15px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 23px;
+      }
+    }
+  }
+} // steel-frame
