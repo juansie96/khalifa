@@ -29,13 +29,11 @@ header {
   width: 100vw;
   position: relative;
 
-  h1 {
+  .kh-png {
     position: absolute;
-    top: 50%;
-    right: 20%;
-    color: #333;
-    font-weight: 300;
-    font-size: 64px;
+    top: 45%;
+    right: 8%;
+    width: 400px;
   }
 
   #background-image {
