@@ -190,7 +190,7 @@ header {
   }
 
   .parallax-container {
-    margin: 130px 0;
+    margin-top: 130px;
     height: 250px;
     display: flex;
 
@@ -206,6 +206,31 @@ header {
       filter: brightness(60%);
     }
   } // parallax
+
+  .steel-frame-info {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 125px 0;
+    text-align: center;
+    font-weight: 300;
+    
+    p {
+      line-height: 1.5rem;
+      padding: 0 10px;
+    }
+
+    h2 {
+      color: #111;
+      padding: 0;
+      margin-bottom: 40px;
+    }
+  }
+
+  .steel-frame-img {
+    width: 450px;
+  }
 
   .ventajas-card {
     display: flex;
@@ -277,6 +302,7 @@ header {
   h2 {
     margin: auto;
     color: #fff;
+    font-weight: 400;
   }
 
   .carousel {
@@ -403,7 +429,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   font-weight: 200;
-  font-size: 18px;
+  font-size: 14px;
 
   .redes-container {
     font-size: 18px;
@@ -419,8 +445,13 @@ footer {
     }
   }
 
+  .copyright {
+    font-size: 20px;
+  }
   .bold {
+    font-size: 16px;
     font-weight: 300;
     margin: 10px 0;
   }
+
 }

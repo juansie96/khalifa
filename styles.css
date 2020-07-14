@@ -187,7 +187,7 @@ header #background-image {
 }
 
 #steel-frame .parallax-container {
-  margin: 130px 0;
+  margin-top: 130px;
   height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,6 +207,35 @@ header #background-image {
 #steel-frame .parallax-container img {
   -webkit-filter: brightness(60%);
           filter: brightness(60%);
+}
+
+#steel-frame .steel-frame-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding: 125px 0;
+  text-align: center;
+  font-weight: 300;
+}
+
+#steel-frame .steel-frame-info p {
+  line-height: 1.5rem;
+  padding: 0 10px;
+}
+
+#steel-frame .steel-frame-info h2 {
+  color: #111;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+#steel-frame .steel-frame-img {
+  width: 450px;
 }
 
 #steel-frame .ventajas-card {
@@ -288,6 +317,7 @@ header #background-image {
 #galeria h2 {
   margin: auto;
   color: #fff;
+  font-weight: 400;
 }
 
 #galeria .carousel {
@@ -412,7 +442,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 200;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 footer .redes-container {
@@ -429,7 +459,12 @@ footer i:hover {
   color: #22dac7;
 }
 
+footer .copyright {
+  font-size: 20px;
+}
+
 footer .bold {
+  font-size: 16px;
   font-weight: 300;
   margin: 10px 0;
 }
