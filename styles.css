@@ -352,8 +352,8 @@ header #background-image {
   border-radius: 20px;
 }
 
-#contacto label {
-  margin: 10px 0;
+#contacto i {
+  color: #fff;
 }
 
 #contacto form {
@@ -421,8 +421,17 @@ footer .redes-container {
   font-size: 1.1rem;
 }
 
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: transparent;
+}
+
 footer i {
   font-size: 26px;
+  color: #fff;
   margin: 10px;
 }
 
@@ -624,6 +633,9 @@ footer .sub-text {
     width: 320px;
     height: 220px;
     margin: auto;
+  }
+  #contacto #form-container .row label {
+    margin-left: 44px;
   }
   footer {
     -webkit-box-orient: vertical;

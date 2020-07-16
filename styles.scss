@@ -343,8 +343,8 @@ header {
     border-radius: 20px;
   }
 
-  label {
-    margin: 10px 0;
+  i {
+    color: $white;
   }
 
   form {
@@ -397,8 +397,16 @@ footer {
     font-size: 1.1rem;
   }
 
+  a {
+    color: #fff;
+
+    &:hover {
+      color: transparent;
+    }
+  }
   i {
     font-size: 26px;
+    color: #fff;
     margin: 10px;
 
     &:hover {
@@ -654,6 +662,14 @@ footer {
       width: 320px;
       height: 220px;
       margin: auto;
+    }
+
+    #form-container {
+      .row {
+        label {
+          margin-left: 44px;
+        }
+      }
     }
   }
 
