@@ -331,16 +331,11 @@
         }
     </script>
 
-    <!-- <script>
-        $(document).on("click", "a", function (e) {
-            e.preventDefault();
-            var id = $(this).attr("href"),
-                topSpace = 30;
-            $('html, body').animate({
-                scrollTop: $(id).offset().top - topSpace
-            }, 800);
+    <script>
+        $('.nav-link').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
         });
-    </script> -->
+    </script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0L83DFvfu4ovwwcYHX2VXYrTofjRW_aQ&callback=initMap">
     </script>
