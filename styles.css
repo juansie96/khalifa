@@ -396,6 +396,12 @@ header #background-image {
   border-bottom: 2px solid red;
 }
 
+.thankyou_message {
+  color: #fff;
+  margin-top: 15px;
+  font-size: 1.3rem;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
