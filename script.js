@@ -1,8 +1,7 @@
 function handleSubmit(){
     event.preventDefault();
     const data = new FormData(event.target);
-    console.log('te amo');
-    fetch('https://script.google.com/macros/s/AKfycbyc8B0TVexCzKSasYrXGRrh5yJgpVyxU5Cz2q98/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbwm-HJW9XXnR293dYAeqVsijofW0JuGIekHoZQAaQ/exec', {
         method: 'POST',
         body: data,
     }).then(() => {
