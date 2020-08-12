@@ -270,6 +270,35 @@ header #background-image {
 
 #galeria {
   text-align: center;
+  margin-bottom: 200px;
+  /* .carousel {
+    width: 1024px;
+    height: 650px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .carousel-inner {
+    position: relative;
+    width: 1024px;
+    height: 650px;
+
+    img {
+      width: 1024px;
+      height: 650px;
+    }
+  }
+
+  h5 {
+    font-size: 24px;
+    margin: 10px;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: $darkTransparent;
+  } */
 }
 
 #galeria .nuestras-obras {
@@ -290,34 +319,71 @@ header #background-image {
   font-weight: 400;
 }
 
-#galeria .carousel {
-  width: 1024px;
-  height: 650px;
-  margin: auto;
-  margin-top: 30px;
+#galeria .obras {
+  width: 80%;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-#galeria .carousel-inner {
+#galeria .obra {
+  height: 250px;
+  width: 300px;
   position: relative;
-  width: 1024px;
-  height: 650px;
+  margin: 30px 0;
 }
 
-#galeria .carousel-inner img {
-  width: 1024px;
-  height: 650px;
-}
-
-#galeria h5 {
-  font-size: 24px;
-  margin: 10px;
-}
-
-#galeria .carousel-caption {
-  position: absolute;
-  left: 0;
+#galeria .obra img {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  border-radius: 8px;
+  opacity: 1;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+#galeria .obra h5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+#galeria .obra button {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: white;
+}
+
+#galeria .obra button:hover {
+  background: #fff;
+  color: #111;
+}
+
+#galeria .obra:hover {
+  cursor: pointer;
+}
+
+#galeria .obra:hover img {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
 }
 
 #contacto {
@@ -394,12 +460,6 @@ header #background-image {
 #contacto form .input-field input[type="tel"].invalid,
 #contacto form .input-field textarea.invalid {
   border-bottom: 2px solid red;
-}
-
-.thankyou_message {
-  color: #fff;
-  margin-top: 15px;
-  font-size: 1.3rem;
 }
 
 footer {
