@@ -236,7 +236,7 @@ header #background-image {
   margin: 20px 0;
   text-align: center;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 #steel-frame .ventajas-card .item {
@@ -259,12 +259,12 @@ header #background-image {
 }
 
 #steel-frame .ventajas-card .item span {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 #steel-frame .ventajas-card .item p {
   margin-left: 15px;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1.1rem;
 }
 
@@ -472,7 +472,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px 0;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   color: #fff;
   border-top: 1px solid #ccc;
@@ -514,7 +514,7 @@ footer p:not(.sub-text) {
 }
 
 footer .sub-text {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 footer .qr {

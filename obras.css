@@ -89,5 +89,9 @@
     width: 80%;
     height: auto;
   }
+  #obras .obra-container.angosto {
+    margin: auto;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=obras.css.map */
