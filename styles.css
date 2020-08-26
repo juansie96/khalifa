@@ -89,7 +89,7 @@ header #background-image {
   content: "";
   position: absolute;
   width: 100%;
-  top: 52px;
+  top: 50px;
   border-bottom: 5px solid #009bc5;
   -webkit-animation: border-bottom 0.4s linear;
           animation: border-bottom 0.4s linear;
